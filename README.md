@@ -34,7 +34,7 @@ Things you may want to cover:
 ### Association
 - has_many :messages
 - has_many :group_users
-- has_many :group, through: :group
+- has_many :groups, through: :group
 
 ## messagesテーブル
 |Column|Type|Options|
