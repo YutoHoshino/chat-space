@@ -1,0 +1,22 @@
+.chat-main
+
+  .chat-main__group-info
+    .chat-main__group-info__left
+      %p.chat-main__group-info__left--name text
+      %p.chat-main__group-info__left--group Member:masa
+    %a.chat-main__group-info__right Edit
+
+  .chat-main__message-list
+    .chat-main__message-list-user
+      %p.chat-main__message-list-user--name masa
+      %p.chat-main__message-list-user--day 2020/04/01
+    %p.chat-main__message-list--message おはよう
+
+  .chat-main__message_form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box_text", placeholder: "type a text"}
+        %label{class: "input-box_image"}
+          = icon('fas', 'image')
+          %input{type: "file", class:"input-box_image_file"}
+      %input{type: "submit",class: "submit-btn",  value: "送信"}
