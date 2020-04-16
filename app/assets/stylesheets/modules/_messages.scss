@@ -47,9 +47,12 @@
     &--name {
       font-size: 15px;
       padding-bottom: 5px;
+      color: #ffffff;
     }
     &--message {
       font-size: 11px;
+      padding-bottom: 46px;
+      color: #ffffff;
     }
   }
 }
@@ -75,7 +78,7 @@
         color: #999999;
       }
     }
-    a {
+    &__right {
       width: 72px;
       height: 40px;
       border: 1px solid;
