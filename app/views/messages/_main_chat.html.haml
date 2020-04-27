@@ -3,11 +3,15 @@
     .chat-main__group-info__left
       %p.chat-main__group-info__left--name
         = @group.name
-      %p.chat-main__group-info__left--group 
-        - @group.users.each do |user|
-          = user.name
-    = link_to edit_group_path(@group) do
-      .chat-main__group-info__right Edit
+      %ul.chat-main__group-info__left--group
+        %li.chat-main__group-info__left--group-member
+          Member: 
+        %li.chat-main__group-info__left--group-name
+          - @group.users.each do |user|
+            = user.name
+      
+      = link_to edit_group_path(@group) do
+        .chat-main__group-info__right Edit
 
   .chat-main__message-list
     = render @messages

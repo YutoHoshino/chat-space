@@ -49,6 +49,9 @@
       padding-bottom: 5px;
       color: #ffffff;
     }
+    a {
+      text-decoration: none;
+    }
     &--message {
       font-size: 11px;
       padding-bottom: 46px;
@@ -65,6 +68,9 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
     &__left {
       padding-left: 40px;
       padding-top: 35px;
@@ -76,6 +82,7 @@
       &--group {
         font-size: 12px;
         color: #999999;
+        display: flex;
       }
     }
     &__right {
